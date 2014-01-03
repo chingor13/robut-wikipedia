@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'robut-wikipedia'
-  s.version     = '0.0.1'
+  s.version     = '0.0.2'
   s.authors     = ["Jeff Ching"]
   s.description = %{ Robut plugin that provides Wikipedia querying functionality. }
   s.summary     = "Wikipedia Robut plugin"
