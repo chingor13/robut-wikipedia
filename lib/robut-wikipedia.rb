@@ -22,7 +22,7 @@ class Robut::Plugin::Wikipedia
 
   def process_response_for(query)
     page_slug = query.strip.gsub(/\s/, "_")
-    page = Wikipedia.find(page_slug)
+    page = ::Wikipedia.find(page_slug)
 
     content = page.content
     if content.nil?
