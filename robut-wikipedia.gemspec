@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'robut-wikipedia'
-  s.version     = ::Robut::Plugin::Wikipedia::VERSION
+  s.version     = '0.0.1'
   s.authors     = ["Jeff Ching"]
   s.description = %{ Robut plugin that provides Wikipedia querying functionality. }
   s.summary     = "Wikipedia Robut plugin"
@@ -12,6 +12,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'wikipedia-client', '~> 1.3.0'
   s.add_dependency 'nokogiri'
   
+  s.license = 'MIT'
   s.files            = `git ls-files`.split("\n")
   s.extra_rdoc_files = ["README.md"]
   s.require_path     = "lib"
