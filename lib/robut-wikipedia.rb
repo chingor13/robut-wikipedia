@@ -13,8 +13,10 @@ class Robut::Plugin::Wikipedia
   end
 
   def handle(time, sender_nick, message)
+    return unless sent_to_me?(message)
 
-    if sent_to_me?(message) && match = message.match(WIKI_REGEX)
+    request = words(message).join(" ")
+    if match = request.match(WIKI_REGEX)
       process_response_for(match[1])
     end
 
